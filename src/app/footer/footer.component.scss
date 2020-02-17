@@ -1,0 +1,199 @@
+@import "src/assets/custome-css/global-variable.scss";
+
+footer{
+    .width_75p{
+        width: 75%;
+        float: right;
+        
+        @include mobileToTablete{
+            width: 100%;
+            float: left;
+        }
+    }
+    .width_55p{
+        width: 55%;
+        @include mobileToTablete{
+            width: 100%;
+            float: left;
+        }
+    }
+    .border_up_text{
+        
+        position: relative;
+        text-align: center;
+        &:before{
+            content:'';
+            position: absolute;
+            height: 1px;
+            background: #000;
+            width: 100%;
+            top: 13px;
+            left: 0;
+            right: 0;
+        }
+        span{
+            position: relative;
+            background: #fff;
+            padding: 0px 8px;
+            font-size: 14px;
+            font-weight: bold;
+            color: #000;
+            text-transform: uppercase;
+        }
+    }
+
+    .reach_social_icon{
+        display: flex;
+        justify-content: center;
+        a{
+            font-size: 30px;
+            color: #000;
+            margin: 0px 12px 0px 0px;
+        }
+    }
+
+    .input_withBtn{
+        width: 85%;
+        float: right;
+        @include mobileToTablete{
+            width: 100%;
+            float: left;
+        }
+        input{
+            border: 1px solid #333;
+            box-shadow: none;
+            color:#000;
+            font-size: 14px;
+            font-weight: 500;
+            height: 36px;
+            position: relative;
+            top: 1px;
+        }
+        button{
+            background: #333;
+            color:#fff;
+        }
+    }
+
+    .delivery_card_flex{
+        display: flex;
+        width:100%;
+        margin-top: 2rem;
+        flex-wrap: wrap;
+        .card_about_deliver:nth-child(1){
+            margin: 0 !important;
+            @include mobileToTablete-1{
+                margin: 0px 0px 20px 0px !important;
+            }
+        }
+        .card_about_deliver{
+            margin: 0px 0px 0px 20px;
+            flex: 1;
+            background: #a4a4a4;
+            color: #fff;
+            text-align: center;
+            padding: 2rem 0rem;
+            @include mobileToTablete-1{
+                margin: 0px 0px 20px 0px;
+                flex: 100%;
+            }
+            p{
+                margin: 0;
+                font-size: 17px;
+                font-weight: 500;
+            }
+        
+        }
+    }
+
+    .end_footerMenu{
+        background: #333;
+        padding: 2rem;
+        margin-top: 2rem;
+        .endFooter_listMenu{
+            h4{
+                color: #fff;
+                font-size: 15px;
+                margin: 0;
+            }
+            .count2{
+                column-count: 2;
+            }
+            ul{
+                margin-top: 1.3rem;
+                li{
+                    margin-bottom: 6px;
+                    a{
+                        text-decoration: none;
+                        color:#ccc;
+                        font-size: 14px;
+                        &:hover{
+                            color:#fff;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    
+    .popual_search{
+        margin: 2rem 0rem;
+        h2{
+            margin: 0;
+            color: #282C3F;
+            font-size: 15px;
+            font-weight: 500;
+            position: relative;
+            &:after{
+                content: '';
+                position: absolute;
+                width: 100%;
+                left: 0;
+                right: 0;
+                height: 1px;
+                background: #EAEAEC;
+                top: 9px;
+                z-index: -1;
+            }
+            span{
+                background: #fff;
+                padding-right: 8px;
+            }
+        }
+
+        .popualSearchTag{
+            margin-top: 1rem;
+            a{
+                color:#848484;
+                text-decoration: none;
+                margin: 0px 6px 0px 0px;
+                font-size: 15px;
+                word-break: break-word;
+                &:after{
+                    content: "|";
+                    margin-left: 4px;
+                    color:#848484;
+                }
+            }
+        }
+    }
+
+    .any_concernAllright{
+        margin: 2rem 0 ;
+        .anyConcernText{
+            color: #848484;
+            font-weight: normal;
+            font-size: 16px;
+            a{
+                font-weight: 500;
+                font-size: 18px;
+            }
+        }
+
+        .allRight2020{
+            @extend .anyConcernText;
+            text-align: right;
+        }
+    }
+    
+}

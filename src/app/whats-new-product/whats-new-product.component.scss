@@ -1,0 +1,47 @@
+@import "src/assets/custome-css/global-variable.scss";
+
+.owl-carousel-saree{
+    padding: 0rem 0rem 0rem 0rem;
+    .heading_bold_lightText{
+        @include headingBoldLightText;
+    }
+    @include carousel_inside_textImg;
+    @include carousel_wrap_common;
+    .carousel-wrap{
+        padding-top: 2rem;
+    }
+}
+
+.whatsNewcarousel{
+    .heading_bold_lightText{
+        p{
+            text-align: left;
+            font-size: 15px;
+        }
+    }
+    .h6_textAboutnewProdcut{
+        color: #000;
+        font-size: 14px;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        margin-top: 10px;
+        margin-bottom: 5px;
+    }
+    .sliderImgContent{
+        p{
+            margin: 0px 0px 0px 0px !important;
+        }
+    }
+}
+
+.whatsNewcarouselForMan{
+    padding-top: 4rem !important;
+}
+
+.margin_bottom_7rem{
+    margin-bottom: 7rem !important;
+    @include mobileToTablete-1{
+        margin-bottom: 3rem !important;
+    }
+}

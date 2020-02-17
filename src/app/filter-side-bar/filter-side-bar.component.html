@@ -1,0 +1,230 @@
+<div class="filter_select_lable">
+
+</div>
+
+<div class="filter_sideBar">
+    <div class="topFilerClear">
+        <span>FILTERS</span>
+        <button type="button" (click)="clearAllcheck()">Clear all</button>
+    </div>
+    <div class="filter_box">
+        <div class="filter_checkbox">
+            <h5>WORK</h5>
+            <form>
+                <div class="form-group">
+                    <input type="checkbox" id="Embroidery">
+                    <label for="Embroidery">
+                        <p>Embroidery</p> 
+                        <span>(102)</span>
+                    </label>
+                </div>
+                <div class="form-group">
+                    <input type="checkbox" id="Printed">
+                    <label for="Printed">
+                        <p>Printed</p>
+                        <span>(11)</span>
+                    </label>
+                </div>
+                <div class="form-group">
+                    <input type="checkbox" id="HandWork">
+                    <label for="HandWork">
+                        <p>Hand Work</p>
+                        <span>(19)</span>
+                    </label>
+                </div>
+                <div class="form-group">
+                    <input type="checkbox" id="Lace_Work">
+                    <label for="Lace_Work">
+                        <p>Lace Work</p>
+                        <span>(6)</span>
+                    </label>
+                </div>
+                <div class="form-group">
+                    <input type="checkbox" id="BorderWork">
+                    <label for="BorderWork">
+                        <p>Border Work</p>
+                        <span>(15)</span>
+                    </label>
+                </div>
+                <div class="form-group">
+                    <input type="checkbox" id="WeavingWork">
+                    <label for="WeavingWork">
+                        <p>Weaving Work</p>
+                        <span>(10)</span>
+                    </label>
+                </div>
+            </form>
+        </div>
+        <!-- end for work saree -->
+        <div class="filter_checkbox choose_color_filter">
+            <h5>color</h5>
+            <form>
+                <div class="form-group">
+                    <input type="checkbox" id="black">
+                    <label for="black">
+                        <span class="color_circle black"></span>
+                       <p>Black</p> <span>(10)</span>
+                    </label>
+                </div>
+                <div class="form-group">
+                    <input type="checkbox" id="Brown">
+                    <label for="Brown">
+                        <span class="color_circle Brown"></span>
+                        <p>Brown</p> <span>(6)</span>
+                    </label>
+                </div>
+                <div class="form-group">
+                    <input type="checkbox" id="Green">
+                    <label for="Green">
+                        <span class="color_circle green"></span>
+                        <p><span>(6)</span>
+                    </label>
+                </div>
+                <button *ngIf="showmoreColor; else showmoreColorTab" (click)="ForshowmoreTab()" class="more_colorFiler">+ 8 more</button>
+                <!-- more color -->
+                <ng-template #showmoreColorTab>
+                    <div class="form-group">
+                        <input type="checkbox" id="Green">
+                        <label for="Green">
+                            <span class="color_circle black"></span>
+                            <p>black</p> <span>(6)</span>
+                        </label>
+                    </div>
+                    <div class="form-group">
+                        <input type="checkbox" id="Green">
+                        <label for="Green">
+                            <span class="color_circle green"></span>
+                           <p>Green</p> <span>(6)</span>
+                        </label>
+                    </div>
+                    <div class="form-group">
+                        <input type="checkbox" id="Brown">
+                        <label for="Green">
+                            <span class="color_circle Brown"></span>
+                            <p>Brown</p> <span>(6)</span>
+                        </label>
+                    </div>
+                    <div class="form-group">
+                        <input type="checkbox" id="Green">
+                        <label for="Green">
+                            <span class="color_circle black"></span>
+                            <p> black </p><span>(6)</span>
+                        </label>
+                    </div>
+                </ng-template>
+               
+                <!-- end more color -->
+            </form>
+        </div>
+        <!-- end for colors -->
+        <div class="filter_checkbox">
+            <h5>FABRIC</h5>
+            <form>
+                <div class="form-group">
+                    <input type="checkbox" id="Chiffon">
+                    <label for="Chiffon">
+                        <p>Chiffon</p><span>(13)</span>
+                    </label>
+                </div>
+                <div class="form-group">
+                    <input type="checkbox" id="cotton">
+                    <label for="cotton">
+                        <p>Cotton</p><span>(11)</span>
+                    </label>
+                </div>
+                <div class="form-group">
+                    <input type="checkbox" id="crepe">
+                    <label for="crepe">
+                        <p>Crepe</p><span>(1)</span>
+                    </label>
+                </div>
+                <div class="form-group">
+                    <input type="checkbox" id="georgette">
+                    <label for="georgette">
+                        <p>Georgette</p><span>(24)</span>
+                    </label>
+                </div>
+                <div class="form-group">
+                    <input type="checkbox" id="net">
+                    <label for="net">
+                        <p>Net</p><span>(16)</span>
+                    </label>
+                </div>
+                <div class="form-group">
+                    <input type="checkbox" id="lycra">
+                    <label for="lycra">
+                        <p>Lycra</p><span>(17)</span>
+                    </label>
+                </div>
+            </form>
+        </div>
+        <!-- end for fabric -->
+        <div class="filter_checkbox">
+            <h5>OCCASION</h5>
+            <form>
+                <div class="form-group">
+                    <input type="checkbox" id="wedding">
+                    <label for="wedding">
+                        <p>Wedding</p><span>(71)</span>
+                    </label>
+                </div>
+                <div class="form-group">
+                    <input type="checkbox" id="Sangeet">
+                    <label for="Sangeet">
+                        <p>Sangeet</p><span>(3)</span>
+                    </label>
+                </div>
+                <div class="form-group">
+                    <input type="checkbox" id="Part">
+                    <label for="Part">
+                        <p>Party</p><span>(44)</span>
+                    </label>
+                </div>
+                <div class="form-group">
+                    <input type="checkbox" id="function">
+                    <label for="function">
+                        <p>Function</p><span>(19)</span>
+                    </label>
+                </div>
+                <div class="form-group">
+                    <input type="checkbox" id="Festive">
+                    <label for="Festive">
+                        <p>Festive<p><span>(9)</span>
+                    </label>
+                </div>
+            </form>
+        </div>
+        <!-- end for OCCASION -->
+        <div class="filter_checkbox">
+            <h5>PRICE</h5>
+            <div class="custom-Priceslider">
+                <ng5-slider [(value)]="value_price" [options]="options"></ng5-slider>
+            </div>
+        </div>
+        <!-- end for Price -->
+        <div class="filter_checkbox">
+            <h5>TIME TO DISPATCH</h5>
+            <form>
+                <div class="form-group">
+                    <input type="checkbox" id="10workinday">
+                    <label for="10workinday">
+                        <p>10 Working Days</p><span>(1)</span>
+                    </label>
+                </div>
+                <div class="form-group">
+                    <input type="checkbox" id="15workinday">
+                    <label for="15workinday">
+                        <p>15 Working Days</p><span>(3)</span>
+                    </label>
+                </div>
+                <div class="form-group">
+                    <input type="checkbox" id="20workinday">
+                    <label for="20workinday">
+                        <p>20 Working Days</p><span>(109)</span>
+                    </label>
+                </div>
+            </form>
+        </div>
+        <!-- end for OCCASION -->
+    </div>
+</div>

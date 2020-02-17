@@ -1,0 +1,20 @@
+@import "src/assets/custome-css/global-variable.scss";
+
+section{
+    padding: 0rem 0 5rem 0;
+}
+
+.how_many_productCount{
+    margin-bottom: 1.5rem;
+    .title{
+        color: #282c3f;
+        font-size: 16px;
+        font-weight: 500;
+    }   
+    .title_count{
+        color: #878b94;
+        font-size: 16px;
+        font-weight: normal;
+    }
+}
+
